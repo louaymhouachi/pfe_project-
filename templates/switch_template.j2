@@ -1,0 +1,21 @@
+hostname {{hostname}}
+
+{%{% for vlan in vlans %}
+vlan {{vlan.id}}
+name {{vlan.name}}
+{% endfor %}%}
+
+interface {{trunk_interface}}
+switchport mode trunk 
+switchport trunk allowed vlan {{allowed_vlans}}
+
+{%for access in access_ports%}
+interface {{acces.interface}}
+switchport mode access
+switchport access vlan {{access.vlan}}
+{%endfor%}
+
+interface vlan {{management_vlan}}
+ip address {{management_ip}} 255.255.255.0
+no shutdown
+ip default-gateway {{default_gateway}}

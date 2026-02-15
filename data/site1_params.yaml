@@ -1,0 +1,17 @@
+#plan réseau de l'usine 
+principal_network: 192.168.0.0/16
+
+zones:
+IT: 
+ prefix: 24
+ vlan_id: 10
+
+OT:
+ prefix: 24
+ vlan_id: 20
+
+
+ERP:
+  prefix: 24
+  vlan_id: 30
+  

@@ -1,0 +1,27 @@
+#============config de switch =================
+hostname {{hostname}}
+no ip domain-lookup 
+
+#============creation des vlan =============
+{% for zone, data in zones.items()%}
+vlan {{ data.vlan_id}}
+name {{zone}}
+{%endfor %}
+
+#==========Access ports configuration==========
+{% for port in access_ports %}
+interface {{ port.interface}}
+switchport mode access
+switchport access vlan {{ port.vlan}}
+spanning-tree portfast
+{% endfor%}
+
+#==============trunk to switch core =============
+interface {{ trunk_ports }}
+switchport mode trunk
+switchport trunk allow vlan {{ allowed_vlans }}
+
+
+
+ip default-gateway {{ default_gateway }}
+copy running-config startup-config 

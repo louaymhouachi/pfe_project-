@@ -1,0 +1,28 @@
+#========switch core config ==========
+hostname {{hostname }}
+no ip domaine-lookup 
+ip routing 
+
+#=========Vlan creation=============
+{% for zone, data in zones.items() %}
+vlan {{ data.vlan_id }}
+name {{ zone }}
+{% endfor %}
+
+#==========interface vlan ============
+{% for zone, data in zones.items() %}
+interface vlan {{ data.vlan_id }}
+ip address {{ data.gateway }} 255.255.255.0
+no shutdown
+{% endfor %}
+
+#=============trunk interfaces to Acess switches============
+{% for trunk in trunk_interfaces %}
+interface {{ access_ports }}
+switchport mode trunk 
+switchport trunk allowed vlan {{allowed_vlans}}
+{% endfor %}
+
+#=================default route to firewall=================
+ip route 0.0.0.0 0.0.0.0 {{firewall_ip }}
+copy running-config startup-config 
