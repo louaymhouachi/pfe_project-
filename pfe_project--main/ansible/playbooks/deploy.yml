@@ -1,8 +1,8 @@
-# deploy.yml
+
 name: Generate Network Configs
 
 on:
-  workflow_dispatch:   # permet de lancer manuellement depuis GitHub Actions
+  workflow_dispatch:   
 
 jobs:
   build_configs:
