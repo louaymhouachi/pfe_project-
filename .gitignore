@@ -1,9 +1,0 @@
-# Python virtual environment
-ansible_venv/
-
-# Cache Python
-__pycache__/
-*.pyc
-
-# Dossiers générés
-generated_configs/
