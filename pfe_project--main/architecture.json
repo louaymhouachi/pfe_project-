@@ -1,22 +1,32 @@
 {
-    "site_name": "site1",
-    "main_network": "192.168.0.0/16",
-    "devices": [
+    "sites": [
         {
-            "name": "core1",
-            "type": "core",
-            "ip": "192.168.1.10"
-
-        },
-        {
-            "name": "access1",
-            "type": "access",
-            "ip": "192.168.1.20"
+            "name": "tunis",
+            "main_network": "10.1.0.0/16",
+            "management_network": "192.168.1.0/24",
+            "vlans": [
+                {
+                    "id": 70,
+                    "name": "rrr"
+                },
+                {
+                    "id": 80,
+                    "name": "zzzzzz"
+                }
+            ],
+            "devices": [
+                {
+                    "name": "s1",
+                    "type": "core",
+                    "access_ports": [],
+                    "trunk_ports": []
+                }
+            ],
+            "ssh_user": "admin",
+            "ssh_pass": "admin",
+            "enable_pass": "cisco",
+            "console_pass": "cisco",
+            "vty_pass": "class"
         }
-    ],
-    "vlans": [
-        {"name": "ADMIN"},
-        {"name": "PROD"},
-        {"name": "CAMERA"}
     ]
 }
