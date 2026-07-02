@@ -162,8 +162,8 @@ Add screenshots here.
 Example:
 
 ```
-<img width="1650" height="950" alt="image" src="https://github.com/user-attachments/assets/eb57b6fe-9360-4c6c-a5cf-5a4092fc1f4c" />
-
+[<img width="1650" height="950" alt="image" src="https://github.com/user-attachments/assets/eb57b6fe-9360-4c6c-a5cf-5a4092fc1f4c" />
+](https://github.com/louaymhouachi/pfe_project-/blob/main/dashboard.png?raw=true)
 
 <img width="1657" height="956" alt="image" src="https://github.com/user-attachments/assets/129d6c3f-e69d-4a45-b56e-44116b0958dc" />
 
