@@ -160,7 +160,7 @@ Generates professional reports including:
 Add screenshots here.
 
 Example:
-
+https://github.com/louaymhouachi/pfe_project-/blob/main/dashboard.png?raw=true
 ```
 [<img width="1650" height="950" alt="image" src="https://github.com/user-attachments/assets/eb57b6fe-9360-4c6c-a5cf-5a4092fc1f4c" />
 ](https://github.com/louaymhouachi/pfe_project-/blob/main/dashboard.png?raw=true)
