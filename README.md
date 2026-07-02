@@ -152,25 +152,6 @@ Generates professional reports including:
 - ACL Analysis
 - Security Findings
 - Recommendations
-
----
-
-## 📸 Screenshots
-
-Add screenshots here.
-
-Example:
-https://github.com/louaymhouachi/pfe_project-/blob/main/dashboard.png?raw=true
-```
-[<img width="1650" height="950" alt="image" src="https://github.com/user-attachments/assets/eb57b6fe-9360-4c6c-a5cf-5a4092fc1f4c" />
-](https://github.com/louaymhouachi/pfe_project-/blob/main/dashboard.png?raw=true)
-
-<img width="1657" height="956" alt="image" src="https://github.com/user-attachments/assets/129d6c3f-e69d-4a45-b56e-44116b0958dc" />
-
-<img width="1200" height="828" alt="image" src="https://github.com/user-attachments/assets/1e07ccb5-dde1-4e5e-a3a2-9c8beec58860" />
-
-```
-
 ---
 
 ## 👨‍💻 Authors
